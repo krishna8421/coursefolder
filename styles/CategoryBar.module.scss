@@ -1,0 +1,16 @@
+.categorybar{
+    position: fixed;
+    width: 15rem;
+    height: 100%;
+    background-color: rgb(8, 0, 26);
+    overflow-x: scroll;
+    color: white;
+    display: flex;
+    justify-content:center;
+}
+.categoryBarLinks > ul{
+    margin-top:2rem;
+    li{
+        margin-bottom: 1.5rem;
+    }
+}
