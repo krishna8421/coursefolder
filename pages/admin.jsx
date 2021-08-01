@@ -3,7 +3,7 @@ import NavBar from '../components/NavBar'
 
 
 export default function Admin() {
-        const fetchURL = "http://localhost:3000/api/server/postUrl"
+        const fetchURL = "/api/server/postUrl"
         const addUrl = async event => {
             const url = event.target.url.value
             event.preventDefault()
