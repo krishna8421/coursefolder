@@ -1,15 +1,28 @@
 import styles from '../styles/NavBar.module.scss'
-
+import Link from 'next/link'
 
 function NavBar() {
     return (
         <div className={styles.navbar}>
             <div className={styles.logo}>
-                <h3>Course Folder</h3>
+                <li>                        
+                    <Link href="/">
+                        <a>Course Folder</a>
+                    </Link>
+                </li>
             </div>
             <div className={styles.links}>
                 <ul>
-                    <li>About Us</li>
+                    <li>                        
+                        <Link href="/about">
+                            <a>About</a>
+                        </Link>
+                    </li>
+                    <li>                        
+                        <Link href="/admin">
+                            <a>Admin</a>
+                        </Link>
+                    </li>
                 </ul>
             </div>
         </div>
